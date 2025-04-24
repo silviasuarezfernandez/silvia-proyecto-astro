@@ -1,15 +1,17 @@
 import { defineCollection } from 'astro:content';
-import { z } from 'zod';
 
 export const collections = {
-  posts: defineCollection({
-    schema: z.object({
+  projects: defineCollection({
+    type: 'json',
+    schema: ({ z }) => ({
       title: z.string(),
+      slug: z.string(),
+      description: z.string(),
       date: z.date(),
-      slug: z.string(),  
     }),
   }),
 };
+
 
 
 

@@ -1,0 +1,24 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro'; // Asegúrate de que la ruta sea correcta
+import { format } from 'date-fns';
+
+const { slug } = Astro.params;
+
+// Usamos import.meta.glob para importar los archivos de la carpeta 'content'
+const projects = await import('../../content/projects.json');
+const project = projects.default.find((p) => p.slug === slug);
+
+if (!project) {
+  throw new Error('Proyecto no encontrado');
+}
+---
+
+<MainLayout title={project.title}>
+  <article>
+    <h1>{project.title}</h1>
+    <p>{format(new Date(project.date), 'MMMM dd, yyyy')}</p>
+    <p>{project.description}</p>
+  </article>
+</MainLayout>
+
+

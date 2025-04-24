@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Proyecto 1",
+      "slug": "proyecto-1",
+      "description": "Descripción del primer proyecto.",
+      "date": "2025-04-20"
+    },
+    {
+      "title": "Proyecto 2",
+      "slug": "proyecto-2",
+      "description": "Descripción del segundo proyecto.",
+      "date": "2025-04-21"
+    },
+    {
+      "title": "Proyecto 3",
+      "slug": "proyecto-3",
+      "description": "Descripción del tercer proyecto.",
+      "date": "2025-04-22"
+    }
+  ]
+  
