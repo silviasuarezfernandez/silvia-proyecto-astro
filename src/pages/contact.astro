@@ -1,25 +1,14 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 ---
 
-<Header />
+<MainLayout title="Contacto">
+  <h1>Contacto</h1>
+  <p>Esta es la página de contacto.</p>
+</MainLayout>
 
-<h1>Contacto</h1>
-<form>
-  <label>
-    Nombre:
-    <input type="text" name="nombre" />
-  </label>
-  <br />
-  <label>
-    Mensaje:
-    <textarea name="mensaje"></textarea>
-  </label>
-  <br />
-  <button type="submit">Enviar</button>
-</form>
 
-<Footer />
+
+
 
 

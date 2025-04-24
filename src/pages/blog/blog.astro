@@ -1,0 +1,26 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro'; 
+
+import { getCollection } from 'astro:content';
+import { format } from 'date-fns';
+
+
+const posts = await getCollection('posts');
+---
+<MainLayout title="Blog">
+    <h1>Blog</h1>
+    <ul>
+      {posts.map(post => (
+        <li>
+          <a href={`/blog/${post.data.slug}`}> <!-- Accede a post.data.slug -->
+            <h2>{post.data.title}</h2>
+            <p>{format(new Date(post.data.date), 'MMMM dd, yyyy')}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </MainLayout>
+  
+
+  
+

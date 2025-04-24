@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.7.0"
+    "astro": "^5.7.0",
+    "date-fns": "^4.1.0",
+    "zod": "^3.24.3"
   }
 }
