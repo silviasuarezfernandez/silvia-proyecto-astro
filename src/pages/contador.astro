@@ -1,0 +1,14 @@
+---
+
+import MainLayout from '../layouts/MainLayout.astro';
+import ContadorComponent from '../components/Contador.jsx';
+---
+
+<MainLayout title="Contador interactivo">
+  <h1>Página del contador interactivo</h1>
+  <p>Este es un ejemplo de componente React interactivo.</p>
+
+  <ContadorComponent client:load />
+</MainLayout>
+
+

@@ -1,10 +1,30 @@
 ---
+
 import MainLayout from '../layouts/MainLayout.astro';
+import Card from '../components/Card.astro';
 ---
 
 <MainLayout title="Página de Inicio">
   <h1>Bienvenidos a la página de inicio</h1>
   <p>Este es el contenido de la página principal.</p>
+
+  <Card 
+    titulo="Artículo 1" 
+    descripcion="poner la descripcion del primer artículo." 
+    enlace="https://enlace.com/1" 
+  />
+
+  <Card 
+    titulo="Artículo 2" 
+    descripcion="poner la descriocion  del segundo artículo." 
+    enlace="https://enlace.com/2" 
+  />
+
+  <Card 
+    titulo="Artículo 3" 
+    descripcion="poner la descripcion del tercer artículo." 
+    enlace="https://enlace.com/3" 
+  />
 </MainLayout>
 
 
